@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		EF583B522DC9C26B00E09986 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = EF583B512DC9C26B00E09986 /* RxCocoa */; };
+		EF583B542DC9C26B00E09986 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = EF583B532DC9C26B00E09986 /* RxRelay */; };
+		EF583B562DC9C26B00E09986 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EF583B552DC9C26B00E09986 /* RxSwift */; };
+		EF583B592DC9C27D00E09986 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = EF583B582DC9C27D00E09986 /* Then */; };
+		EF583B5C2DC9C29200E09986 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EF583B5B2DC9C29200E09986 /* SnapKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		EF583B302DC9BDC500E09986 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -65,6 +73,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF583B562DC9C26B00E09986 /* RxSwift in Frameworks */,
+				EF583B542DC9C26B00E09986 /* RxRelay in Frameworks */,
+				EF583B522DC9C26B00E09986 /* RxCocoa in Frameworks */,
+				EF583B592DC9C27D00E09986 /* Then in Frameworks */,
+				EF583B5C2DC9C29200E09986 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +138,11 @@
 			);
 			name = InterViewPreparation_RxCheck;
 			packageProductDependencies = (
+				EF583B512DC9C26B00E09986 /* RxCocoa */,
+				EF583B532DC9C26B00E09986 /* RxRelay */,
+				EF583B552DC9C26B00E09986 /* RxSwift */,
+				EF583B582DC9C27D00E09986 /* Then */,
+				EF583B5B2DC9C29200E09986 /* SnapKit */,
 			);
 			productName = InterViewPreparation_RxCheck;
 			productReference = EF583B192DC9BDC300E09986 /* InterViewPreparation_RxCheck.app */;
@@ -208,6 +226,11 @@
 			);
 			mainGroup = EF583B102DC9BDC300E09986;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				EF583B502DC9C26B00E09986 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				EF583B572DC9C27D00E09986 /* XCRemoteSwiftPackageReference "Then" */,
+				EF583B5A2DC9C29200E09986 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = EF583B1A2DC9BDC300E09986 /* Products */;
 			projectDirPath = "";
@@ -569,6 +592,61 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EF583B502DC9C26B00E09986 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.9.0;
+			};
+		};
+		EF583B572DC9C27D00E09986 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		EF583B5A2DC9C29200E09986 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EF583B512DC9C26B00E09986 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF583B502DC9C26B00E09986 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		EF583B532DC9C26B00E09986 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF583B502DC9C26B00E09986 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		EF583B552DC9C26B00E09986 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF583B502DC9C26B00E09986 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		EF583B582DC9C27D00E09986 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF583B572DC9C27D00E09986 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+		EF583B5B2DC9C29200E09986 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF583B5A2DC9C29200E09986 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EF583B112DC9BDC300E09986 /* Project object */;
 }
